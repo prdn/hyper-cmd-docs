@@ -1,8 +1,27 @@
+### Identity
+
+Install toolbox
+
+```sh
+npm install -g hyper-cmd-utils
+```
+
+Generate a seed (ie. for hypertele server, ...)
+
+```sh
+hyper-cmd-util-keygen --gen_seed
+```
+
+Generate a keypair (ie. for hypertele client, hyperssh, ...)
+
+```sh
+hyper-cmd-util-keygen --gen_keypair mykeypair.json
+```
+
 ### Identity resolution
 
 Hypertele supports identity resolution for clients.
 Search priority is `.`, `~/`, `/etc/` `/Users`.
-
 
 ```
 example: ~/.hyper-id.json
